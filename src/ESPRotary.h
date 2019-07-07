@@ -33,7 +33,7 @@ class ESPRotary {
     CallbackFunction left_cb = NULL;
 
  public:
-    ESPRotary(int pin1, int pin2, int moves_per_click = 1);
+    ESPRotary(int pin1, int pin2, int moves_per_click = 4);
 
     int getPosition();
     void resetPosition();
