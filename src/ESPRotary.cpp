@@ -14,10 +14,7 @@
 ESPRotary::ESPRotary(int pin1, int pin2, int moves_per_click ) {
   this->pin1 = pin1;
   this->pin2 = pin2;
-  if (moves_per_click < 1) {
-    #pragma message("At least one move per click required, reverting to 1")
-    moves_per_click = 4;
-  }
+
   this->moves_per_click = moves_per_click;
 
   pinMode(pin1, INPUT_PULLUP);
